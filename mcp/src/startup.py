@@ -6,24 +6,16 @@ import weaviate
 from weaviate.classes.config import Configure, Property, DataType
 
 from src.utils import get_weaviate_sync_client
-from src.config import IRPAPERS_DOCS_COUNT, LOUD_STARTUP
 
 def startup():
     weaviate_sync_client = get_weaviate_sync_client()
     if not _check_if_collection_exists(weaviate_sync_client):
         _create_irpapers_weaviate_collection(weaviate_sync_client)
-    if not _check_if_collection_has_data(weaviate_sync_client):
         _load_page_images_into_weaviate_collection(weaviate_sync_client)
     weaviate_sync_client.close()
 
 def _check_if_collection_exists(weaviate_sync_client):
     if weaviate_sync_client.collections.exists("IRPAPERS"):
-        return True
-    else:
-        return False
-
-def _check_if_collection_has_data(weaviate_sync_client):
-    if len(weaviate_sync_client.collections.get("IRPAPERS")) == IRPAPERS_DOCS_COUNT:
         return True
     else:
         return False
@@ -61,15 +53,17 @@ def _load_page_images_into_weaviate_collection(weaviate_sync_client):
                 "page_image": properties["base64_str"],
             }
             batch.add_object(collection="IRPAPERS", properties=props)
-            
-            if LOUD_STARTUP and i % 100 == 0:
-                elapsed = time.perf_counter() - time_start
-                rate = i / max(elapsed, 1e-9)
-                print(f"\033[92mInserted {i} objects ({elapsed:.1f}s, {rate:.1f} objs/s)\033[0m")
+
+            elapsed = time.perf_counter() - time_start
+            rate = i / max(elapsed, 1e-9)
+            print(f"\033[92mInserted {i} objects ({elapsed:.1f}s, {rate:.1f} objs/s)\033[0m")
 
             total = i
             
-        if LOUD_STARTUP:
-            elapsed = time.perf_counter() - time_start
-            rate = total / max(elapsed, 1e-9)
-            print(f"\033[92mInserted {total} objects ({elapsed:.1f}s, {rate:.1f} objs/s)\033[0m")
+        elapsed = time.perf_counter() - time_start
+        rate = total / max(elapsed, 1e-9)
+        print(f"\033[92mInserted {total} objects ({elapsed:.1f}s, {rate:.1f} objs/s)\033[0m")
+    
+if __name__ == "__main__":
+    print("Here")
+    startup()
