@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "datasets>=4.5.0",
+    "fastmcp>=3.0.0,<4",
     "weaviate-client[agents]>=4.19.2",
 ]
 
