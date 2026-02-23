@@ -37,7 +37,7 @@ A Visual Document Benchmark for Scientific Retrieval and Question Answering.
 Please consider citing our paper if you find this work useful:
 
 ```bibtex
-@misc{shorten2024,
+@misc{shorten2026,
       title={IRPAPERS: A Visual Document Benchmark for Scientific Retrieval and Question Answering}, 
       author={Connor Shorten and Augustas Skaburskas and Daniel M. Jones and Charles Pierse and Roberto Esposito and John Trengrove and Etienne Dilocker and Bob van Luijt},
       year={2026},
