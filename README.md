@@ -1,9 +1,8 @@
 # IRPAPERS
 A Visual Document Benchmark for Scientific Retrieval and Question Answering.
 
-This repository contains the home for the IRPAPERS MCP server, as well as another place for the dataset in addition to huggingface.co/weaviate/IRPAPERS.
-
-The code used to produce the experimental analysis in the paper can be found at github.com/weaviate/query-agent-benchmarking.
+- You can also find the dataset on [HuggingFace](huggingface.co/weaviate/IRPAPERS).
+- The experimental code used to produce the analysis in our paper can be found [here](github.com/weaviate/query-agent-benchmarking).
 
 ## Retrieval Leaderboard 🔎
 
