@@ -1,7 +1,7 @@
 # IRPAPERS
 A Visual Document Benchmark for Scientific Retrieval and Question Answering.
 
-- You can also find the dataset on [HuggingFace](https://huggingface.co/weaviate/IRPAPERS).
+- You can also find the dataset on [HuggingFace](https://huggingface.co/datasets/weaviate/IRPAPERS).
 - The experimental code used to produce the analysis in our paper can be found [here](https://www.github.com/weaviate/query-agent-benchmarking).
 
 ## Retrieval Leaderboard 🔎
