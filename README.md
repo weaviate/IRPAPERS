@@ -8,7 +8,7 @@ A Visual Document Benchmark for Scientific Retrieval and Question Answering.
 
 | Rank | Retriever | Type | Recall@1 | Recall@5 | Recall@20 |
 |------|-----------|------|----------|----------|-----------|
-| 1 | Mixedbread* | Text | 59% | 91% | 96% |
+| 1 | Mixedbread* | Image | 59% | 91% | 96% |
 | 2 | Multimodal Hybrid (Cohere Embed v4.0 + Voyage 3 Large + BM25) | Hybrid | 58% | 91% | 98% |
 | 3 | Cohere Embed v4.0 | Image | 58% | 87% | 97% |
 | 4 | Voyage 3 Large | Text | 52% | 86% | 95% |
