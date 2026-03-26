@@ -8,20 +8,22 @@ A Visual Document Benchmark for Scientific Retrieval and Question Answering.
 
 | Rank | Retriever | Type | Recall@1 | Recall@5 | Recall@20 |
 |------|-----------|------|----------|----------|-----------|
-| 1 | Mixedbread* | Image | 59% | 91% | 96% |
-| 2 | Multimodal Hybrid (Cohere Embed v4.0 + Voyage 3 Large + BM25) | Hybrid | 58% | 91% | 98% |
-| 3 | Cohere Embed v4.0 | Image | 58% | 87% | 97% |
-| 4 | Voyage 3 Large | Text | 52% | 86% | 95% |
-| 5 | ColQwen2 | Image | 49% | 81% | 94% |
-| 6 | Multimodal Hybrid (ColModernVBERT + Arctic 2.0 + BM25) | Hybrid | 49% | 81% | 95% |
-| 7 | Hybrid Text Search (Arctic 2.0 + BM25) | Text | 46% | 78% | 91% |
-| 8 | ColPali | Image | 45% | 79% | 93% |
-| 9 | BM25 | Text | 45% | 71% | 90% |
-| 10 | Arctic 2.0 | Text | 44% | 76% | 88% |
-| 11 | ColModernVBERT | Image | 43% | 78% | 93% |
-| 12 | ColModernVBERT + MUVERA (ef=1024) | Image | 41% | 75% | 88% |
-| 13 | ColModernVBERT + MUVERA (ef=512) | Image | 37% | 68% | 78% |
-| 14 | ColModernVBERT + MUVERA (ef=256) | Image | 35% | 61% | 66% |
+| 1 | Query Agent Search Mode (Voyage 4 Large) | Text | 61% | 86% | 92% |
+| 2 | Mixedbread* | Image | 59% | 91% | 96% |
+| 3 | Multimodal Hybrid (Cohere Embed v4.0 + Voyage 3 Large + BM25) | Hybrid | 58% | 91% | 98% |
+| 4 | Cohere Embed v4.0 | Image | 58% | 87% | 97% |
+| 5 | Voyage 4 Large | Text | 53% | 91% | 96% |
+| 6 | Voyage 3 Large | Text | 52% | 86% | 95% |
+| 7 | ColQwen2 | Image | 49% | 81% | 94% |
+| 8 | Multimodal Hybrid (ColModernVBERT + Arctic 2.0 + BM25) | Hybrid | 49% | 81% | 95% |
+| 9 | Hybrid Text Search (Arctic 2.0 + BM25) | Text | 46% | 78% | 91% |
+| 10 | ColPali | Image | 45% | 79% | 93% |
+| 11 | BM25 | Text | 45% | 71% | 90% |
+| 12 | Arctic 2.0 | Text | 44% | 76% | 88% |
+| 13 | ColModernVBERT | Image | 43% | 78% | 93% |
+| 14 | ColModernVBERT + MUVERA (ef=1024) | Image | 41% | 75% | 88% |
+| 15 | ColModernVBERT + MUVERA (ef=512) | Image | 37% | 68% | 78% |
+| 16 | ColModernVBERT + MUVERA (ef=256) | Image | 35% | 61% | 66% |
 
 *: Mixedbread is refering to [Mixedbread Stores](https://www.mixedbread.com/docs/quickstart), a search api powered by [Mixedbread Wholembed v3](https://www.mixedbread.com/blog/wholembed-v3). Please find the reproduction script [here](https://gist.github.com/aamir-s18/87c31924679b872b6cd4566edb850089).
 
