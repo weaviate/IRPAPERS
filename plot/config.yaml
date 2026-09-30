@@ -1,0 +1,34 @@
+# Which leaderboard entries to plot. Names must match the README table
+# (markdown links and trailing "*" footnote markers are ignored).
+# Series are colored in the order listed, so a system keeps its color
+# across plots as long as it keeps its position. Max 6 per plot.
+
+readme: ../README.md
+output_dir: figures
+
+ir:
+  section: Retrieval Leaderboard
+  name_column: Retriever
+  metrics: [Recall@1, Recall@5, Recall@20]
+  title: IRPAPERS Retrieval Results
+  output: ir-results.png
+  retrievers:
+    - Mixedbread Toast 1
+    - Query Agent Search Mode (Voyage 4 Large)
+    - Multimodal Hybrid (Cohere Embed v4.0 + Voyage 3 Large + BM25)
+    - Cohere Embed v4.0
+    - Voyage 4 Large
+    - BM25
+
+qa:
+  section: Question Answering Leaderboard
+  name_column: System
+  metric: Alignment Score
+  title: IRPAPERS Question Answering Results
+  output: qa-results.png
+  systems:
+    - TextRAG (k=5)
+    - ImageRAG (k=5)
+    - TextRAG (k=1)
+    - ImageRAG (k=1)
+    - No Retrieval Baseline

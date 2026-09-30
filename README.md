@@ -12,21 +12,24 @@ A Visual Document Benchmark for Scientific Retrieval and Question Answering.
 | 2 | Query Agent Search Mode (Voyage 4 Large) | Text | 61% | 86% | 92% |
 | 3 | Mixedbread* | Image | 59% | 91% | 96% |
 | 4 | Multimodal Hybrid (Cohere Embed v4.0 + Voyage 3 Large + BM25) | Hybrid | 58% | 91% | 98% |
-| 5 | Cohere Embed v4.0 | Image | 58% | 87% | 97% |
+| 5 | Cohere Embed v4.0 | Image | 56%** | 87% | 97% |
 | 6 | Voyage 4 Large | Text | 53% | 91% | 96% |
 | 7 | Voyage 3 Large | Text | 52% | 86% | 95% |
 | 8 | ColQwen2 | Image | 49% | 81% | 94% |
 | 9 | Multimodal Hybrid (ColModernVBERT + Arctic 2.0 + BM25) | Hybrid | 49% | 81% | 95% |
-| 10 | Hybrid Text Search (Arctic 2.0 + BM25) | Text | 46% | 78% | 91% |
-| 11 | ColPali | Image | 45% | 79% | 93% |
-| 12 | BM25 | Text | 45% | 71% | 90% |
-| 13 | Arctic 2.0 | Text | 44% | 76% | 88% |
-| 14 | ColModernVBERT | Image | 43% | 78% | 93% |
-| 15 | ColModernVBERT + MUVERA (ef=1024) | Image | 41% | 75% | 88% |
-| 16 | ColModernVBERT + MUVERA (ef=512) | Image | 37% | 68% | 78% |
-| 17 | ColModernVBERT + MUVERA (ef=256) | Image | 35% | 61% | 66% |
+| 10 | Cohere Embed v5.0 Pro | Image | 49% | 78% | 92% |
+| 11 | Hybrid Text Search (Arctic 2.0 + BM25) | Text | 46% | 78% | 91% |
+| 12 | ColPali | Image | 45% | 79% | 93% |
+| 13 | BM25 | Text | 45% | 71% | 90% |
+| 14 | Arctic 2.0 | Text | 44% | 76% | 88% |
+| 15 | ColModernVBERT | Image | 43% | 78% | 93% |
+| 16 | ColModernVBERT + MUVERA (ef=1024) | Image | 41% | 75% | 88% |
+| 17 | ColModernVBERT + MUVERA (ef=512) | Image | 37% | 68% | 78% |
+| 18 | ColModernVBERT + MUVERA (ef=256) | Image | 35% | 61% | 66% |
 
 *: Mixedbread is refering to [Mixedbread Stores](https://www.mixedbread.com/docs/quickstart), a search api powered by [Mixedbread Wholembed v3](https://www.mixedbread.com/blog/wholembed-v3). Please find the reproduction script [here](https://gist.github.com/aamir-s18/87c31924679b872b6cd4566edb850089) (the same system was used for the Mixedbread Toast 1 results).
+
+\*\*: Cohere Embed v4.0 Recall@1 regressed from 58% to 56% on a re-run on September 30th, 2026.
 
 ## Question Answering Leaderboard 💬
 
